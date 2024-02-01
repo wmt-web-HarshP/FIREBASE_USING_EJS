@@ -1,4 +1,4 @@
-const express=require('express');
+const express = require("express");
 const { initializeApp } = require("firebase/app");
 const {
   getStorage,
@@ -20,12 +20,12 @@ const storage = getStorage();
 // Setting up multer as a middleware to grab photo uploads
 const upload = multer({ storage: multer.memoryStorage() });
 
-router.get('/',async(req,res)=>{
-    res.render('upload')
-})
+router.get("/", async (req, res) => {
+  res.render("upload");
+});
 
 router.post("/", upload.single("filename"), async (req, res) => {
-    console.log(req.file); 
+  console.log(req.file);
   try {
     const dateTime = giveCurrentDateTime();
 
@@ -72,4 +72,4 @@ const giveCurrentDateTime = () => {
   return dateTime;
 };
 
-module.exports=router
+module.exports = router;

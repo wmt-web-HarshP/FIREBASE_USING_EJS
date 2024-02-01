@@ -24,11 +24,13 @@ app.get("/", (req, res) => {
 const booksRouter = require("./routes/books");
 const userRouter=require("./routes/user");
 const uploadRouter=require('./routes/upload')
+const messageRouter=require('./routes/messaging')
 
 //router middleware
 app.use("/books", booksRouter);
 app.use('/users',userRouter)
 app.use('/uploads',uploadRouter)
+app.use('/messages',messageRouter)
 
 //port requiring
 const port = process.env.PORT || 3000;
