@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOK CRUD</title>
+  </head>
+  <body>
+    <h1>GETTING STATRED WITH FIREBASE</h1>
+
+    <form class="add" action="/books/create" method="post">
+      <label for="title">Title:</label>
+      <input type="text" name="title" required />
+      <label for="auther">Auther:</label>
+      <input type="text" name="auther" required />
+
+      <button>ADD A NEW BOOK</button>
+    </form>
+
+    <form class="update" action="books/update" method="post">
+      <label for="id">DOCMUENT ID:</label>
+      <input type="text" name="id" required />
+      <button>UPDATE A BOOK</button>
+    </form>
+
+    <form class="delete" action="/books/delete:id" method="get">
+      <label for="id">DOCMUENT ID:</label>
+      <input type="text" name="id" required />
+      <button>DELETE A BOOK</button>
+    </form>
+  </body>
+</html>

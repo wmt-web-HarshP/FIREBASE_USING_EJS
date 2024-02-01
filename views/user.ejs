@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USER</title>
+  </head>
+  <body>
+    <h2>FIREBASE AUTHENTICATION</h2>
+
+    <form class="signup" action="users/signup" method="post">
+      <label for="email">email:</label>
+      <input type="email" name="email" />
+      <label for="password">password:</label>
+      <input type="password" name="password" />
+      <button>signup</button>
+    </form>
+    <br />
+    <form class="login" action="users/login" method="post">
+      <label for="email">email:</label>
+      <input type="email" name="email" />
+      <label for="password">password:</label>
+      <input type="password" name="password" />
+      <button>Login</button>
+    </form>
+    <br />
+    <form class="logout" action="users/logout" method="post">
+      <button>LogOut</button>
+    </form>
+  </body>
+</html>

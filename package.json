@@ -1,0 +1,22 @@
+{
+  "name": "firebase_express_ejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Harsh Prajapati",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "firebase": "^10.7.2",
+    "firebase-admin": "^12.0.0",
+    "firebase-cli": "^1.2.0",
+    "firebase-tools": "^13.1.0"
+  }
+}
